@@ -1,0 +1,38 @@
+seed: 20260810
+primary_metric: patient_equal_MAE
+min_cells_per_visit: 100
+min_patients_primary: 8
+min_patients_stress: 5
+bootstrap_primary: 5000
+bootstrap_quick_check: 300
+mixing_weight_grid_step: 0.01
+risk_alpha: 0.05
+risk_delta: 0.0
+one_se_lambda: 1.0
+qualification_criteria:
+  pdr_min: 0.05
+  pdr_lcb_min: 0.01
+  puc_lcb_min: 0.0
+  npi_lcb_min: 0.0
+  positive_weight_fold_fraction_min: 0.70
+  require_final_risk_below_reference: true
+canonical_states:
+  - Memory
+  - Effector
+  - Exhausted
+  - Regulatory
+  - Other_T
+literature_prior:
+  name: LiteratureExhaustionProgression
+  status: pre-specified mechanistic hypothesis; not biological truth
+  edges:
+    - [Memory, Effector]
+    - [Effector, Exhausted]
+    - [Memory, Exhausted]
+  evidence:
+    - PMID: 27501248
+      note: PD-1-responsive TCF1-positive progenitor-like exhausted CD8 compartment
+    - PMID: 32396847
+      note: developmental relationships among exhausted CD8 T-cell states
+    - PMID: 30635237
+      note: intratumoral TCF1-positive PD-1-positive stem-like CD8 T cells

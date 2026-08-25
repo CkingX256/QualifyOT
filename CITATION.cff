@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use QualifyOT, please cite the accompanying manuscript."
+title: "QualifyOT"
+type: software
+authors:
+  - family-names: "Hu"
+    given-names: "Chenghua"
+  - family-names: "Chen"
+    given-names: "King"
+  - family-names: "Yang"
+    given-names: "Jinliang"
+  - family-names: "Yin"
+    given-names: "Hang"
+  - family-names: "Zhang"
+    given-names: "Hongyi"
+repository-code: "https://github.com/OWNER/QualifyOT"

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "setuptools-scm>=8", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qualifyot"
+dynamic = ["version"]
+description = "Patient-level qualification and refinement of structured priors in longitudinal compositional prediction"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Chenghua Hu"},
+  {name = "King Chen"},
+  {name = "Jinliang Yang"},
+  {name = "Hang Yin"},
+  {name = "Hongyi Zhang"}
+]
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.0",
+  "scipy>=1.11",
+  "scikit-learn>=1.4",
+  "PyYAML>=6.0"
+]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.35", "reportlab>=4.0", "matplotlib>=3.8"]
+test = ["pytest>=8.0"]
+full = ["requests>=2.31", "matplotlib>=3.8", "tabulate>=0.9", "streamlit>=1.35", "reportlab>=4.0"]
+
+[project.scripts]
+qualifyot-inspect = "qualifyot.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["qualifyot*"]
+
+[tool.setuptools_scm]
+fallback_version = "0"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,13 @@
+{
+  "rows": 9,
+  "states": [
+    "Memory",
+    "Effector",
+    "Exhausted",
+    "Regulatory",
+    "Other_T"
+  ],
+  "max_abs_roundtrip_error": 0.0,
+  "simplex_max_error": 2.220446049250313e-16,
+  "interpretation": "Adapter I/O contract verified; this is not an external-method performance benchmark."
+}

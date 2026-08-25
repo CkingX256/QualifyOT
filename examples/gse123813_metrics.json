@@ -1,0 +1,23 @@
+{
+  "candidate": "RobustBlend",
+  "cohort": "GSE123813",
+  "PDR": 0.861528,
+  "PDR_CI2.5": 0.54927,
+  "PDR_CI97.5": 1.578697,
+  "PUC": 0.022566,
+  "PUC_CI2.5": 0.011746,
+  "PUC_CI97.5": 0.034595,
+  "NPI": 0.007413,
+  "NPI_CI2.5": 0.002504,
+  "NPI_CI97.5": 0.013114,
+  "positive_weight_fold_fraction": 0.7777777778,
+  "reference_risk": 0.070581,
+  "final_risk": 0.063169,
+  "perturbation_stability": {
+    "patient_deletion_qualified": "2/9",
+    "full_pipeline_bootstrap_qualified": "9/100",
+    "PUC_LCB_positive_fraction": 0.32,
+    "NPI_LCB_positive_fraction": 0.3,
+    "positive_fold_gate_fraction": 0.18
+  }
+}
