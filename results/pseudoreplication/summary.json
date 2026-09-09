@@ -1,0 +1,26 @@
+{
+  "design": "Gaussian random-intercept exact sufficient-statistic simulation",
+  "seed": 20260902,
+  "replicates": 50000,
+  "alpha": 0.05,
+  "n_patients_null": 20,
+  "cell_counts": [
+    10,
+    100,
+    1000,
+    10000,
+    100000
+  ],
+  "sigma_patient": 1.0,
+  "sigma_cell": 1.0,
+  "power_theta": 0.35,
+  "headline": {
+    "naive_type1_at_min_cells": 0.24648,
+    "naive_type1_at_max_cells": 0.49728,
+    "patient_type1_at_min_cells": 0.05076,
+    "patient_type1_at_max_cells": 0.04774,
+    "patient_power_at_min_n": 0.26616,
+    "patient_power_at_max_n": 0.92678
+  },
+  "interpretation_guardrail": "This simulation demonstrates pseudoreplication under a specified hierarchical Gaussian DGP. It is not a claim that all cell-level analyses are invalid; cell-level models require methods that account for within-patient dependence when patient-level scientific claims are made."
+}

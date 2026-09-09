@@ -1,0 +1,5 @@
+candidate,analysis,max_numeric_difference,prediction_bytes_identical,state_identical,status
+ExpressionElasticNet,Honest,0.0,True,True,PASS
+ExpressionElasticNet,DEPENDENT-LOPO DIAGNOSTIC,0.0,True,True,PASS
+CompositionEntropicOT,Honest,0.0,True,True,PASS
+CompositionEntropicOT,DEPENDENT-LOPO DIAGNOSTIC,0.0,True,True,PASS

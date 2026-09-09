@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "qualifyot"
 dynamic = ["version"]
-description = "Patient-level qualification and refinement of structured priors in longitudinal compositional prediction"
+description = "Patient-level evidence control for longitudinal single-cell prediction"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
@@ -26,9 +26,11 @@ dependencies = [
 [project.optional-dependencies]
 app = ["streamlit>=1.35", "reportlab>=4.0", "matplotlib>=3.8"]
 test = ["pytest>=8.0"]
+transformer = ["torch>=2.2"]
 full = ["requests>=2.31", "matplotlib>=3.8", "tabulate>=0.9", "streamlit>=1.35", "reportlab>=4.0"]
 
 [project.scripts]
+qualifyot = "qualifyot.cli:main"
 qualifyot-inspect = "qualifyot.cli:main"
 
 [tool.setuptools]

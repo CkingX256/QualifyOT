@@ -1,0 +1,5 @@
+scenario,n,replicates,movement_mean,utility_mean,deployment_retention_mean,utility_only_positive,qualifyot_positive,hoeffding_radius
+all_three_supported,80,20000,0.12,0.12,0.12,0.9998,0.9994,0.05473328305111974
+movement_boundary,80,20000,0.0,0.12,0.12,0.9998,0.01035,0.05473328305111974
+utility_boundary,80,20000,0.12,0.0,0.12,0.01055,0.01055,0.05473328305111974
+deployment_retention_boundary,80,20000,0.12,0.12,0.0,0.9997,0.00865,0.05473328305111974

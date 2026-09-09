@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "gate": "GSE174554_TARGET_ACCESS",
+  "status": "VERIFIED_OPEN_FOR_METADATA_MAPPING",
+  "target_metadata_opened_before_freeze": false,
+  "eligible_n": 30,
+  "development_n": 18,
+  "confirmation_n": 12,
+  "contract_sha256": "57b6bf772b4c5100809fc755f5f999bab2fadd699d0c9b754d7e929fc8380559",
+  "dependency_closure_sha256": "59f29aa50deb1ca6c7c9e9bae9dafb1550d86e0fc8f5f525caa954962d9a1ae1",
+  "protocol_freeze_sha256": "c2079aa7d20ca6050d294cec3329696e0e79afd4d630284d7fb8baf443c86cfa",
+  "verified_utc": "2026-09-07T01:34:22+00:00"
+}

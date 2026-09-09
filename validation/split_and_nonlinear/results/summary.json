@@ -1,0 +1,44 @@
+{
+  "scope": "retrospective supplemental stress tests; neither analysis is an untouched prospective confirmation or a substitute for Waddington-OT/MIOFlow/scNODE",
+  "repeated_split": {
+    "n_splits": 10,
+    "cohort_conditional_qualified": 0,
+    "population_qualified": 0,
+    "lambda_zero": 7,
+    "median_candidate_mae": 0.3089251130965815,
+    "median_reference_mae": 0.32247832673346244,
+    "utility_lcb_min": -0.3060484140178773,
+    "utility_lcb_max": -0.008257339781916007
+  },
+  "deep_proxy": {
+    "n_seeds": 5,
+    "cohort_conditional_qualified": 0,
+    "population_qualified": 0,
+    "lambda_zero": 5,
+    "candidate_mae_min": 0.35091668232042345,
+    "candidate_mae_max": 0.37796537068969366,
+    "reference_mae": 0.37794677214901434,
+    "cc_utility_lcb_min": -0.18980691437762376,
+    "cc_utility_lcb_max": -0.15923586476598064
+  },
+  "fixed_split_seeds": [
+    93117,
+    104729,
+    130363,
+    155921,
+    181081,
+    205019,
+    229939,
+    254053,
+    279121,
+    304003
+  ],
+  "mlp_seeds": [
+    20260909,
+    20260919,
+    20260929,
+    20260939,
+    20260949
+  ],
+  "retention_bootstrap": 1000
+}

@@ -1,0 +1,20 @@
+ n_patients  cells_per_patient  total_cells  replicates  alpha  sigma_patient  sigma_cell  intraclass_correlation  naive_cell_type1_one_sided  patient_type1_one_sided  naive_cell_type1_two_sided  patient_type1_two_sided  mean_naive_95ci_halfwidth  mean_patient_95ci_halfwidth  median_naive_abs_t  median_patient_abs_t
+         20                 10          200       50000   0.05            1.0         1.0                     0.5                     0.24648                  0.05076                     0.40820                  0.04966                   0.194195                     0.484587            1.613913              0.688998
+         20                100         2000       50000   0.05            1.0         1.0                     0.5                     0.40754                  0.04830                     0.78664                  0.05072                   0.061043                     0.463999            4.874125              0.687362
+         20               1000        20000       50000   0.05            1.0         1.0                     0.5                     0.46908                  0.05024                     0.93004                  0.04942                   0.019277                     0.461200           15.341008              0.688099
+         20              10000       200000       50000   0.05            1.0         1.0                     0.5                     0.48886                  0.04852                     0.97938                  0.04926                   0.006105                     0.462533           48.680733              0.688092
+         20             100000      2000000       50000   0.05            1.0         1.0                     0.5                     0.49728                  0.04774                     0.99330                  0.04978                   0.001929                     0.461476          154.479207              0.692582
+
+Patient-count power:
+  n_patients  cells_per_patient  replicates  theta  alpha  patient_one_sided_power  mean_patient_95ci_halfwidth  mean_patient_estimate  empirical_sd_patient_estimate
+         10               1000       50000   0.35   0.05                  0.26616                     0.695506               0.347396                       0.316233
+         20               1000       50000   0.35   0.05                  0.44474                     0.462438               0.350608                       0.224333
+         40               1000       50000   0.35   0.05                  0.70246                     0.317714               0.349707                       0.158412
+         80               1000       50000   0.35   0.05                  0.92678                     0.221933               0.349990                       0.112102
+
+Mechanical duplication:
+  duplication_factor  n_patients  original_cells_per_patient  apparent_total_cell_rows  patient_mean  patient_t_stat  patient_t_shift_vs_k1  naive_cell_t_stat  naive_t_ratio_vs_k1  theoretical_sqrt_k
+                  1          20                         100                      2000      0.524818        2.958862                    0.0          18.926617             1.000000            1.000000
+                 10          20                         100                     20000      0.524818        2.958862                    0.0          59.864690             3.162989            3.162278
+                100          20                         100                    200000      0.524818        2.958862                    0.0         189.313032            10.002476           10.000000
+               1000          20                         100                   2000000      0.524818        2.958862                    0.0         598.661720            31.630677           31.622777

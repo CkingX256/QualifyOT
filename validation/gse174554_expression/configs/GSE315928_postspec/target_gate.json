@@ -1,0 +1,16 @@
+{
+  "contract_file": "GSE315928_EXTERNAL_POSTSPEC_VALIDATION.yaml",
+  "contract_semantic_sha256": "48f79562ed8237900f733d125de551f28340a02c5bc453e9ce5e3899333bf237",
+  "created_utc": "2026-09-03T02:14:13Z",
+  "dependencies": [],
+  "guardrail": "This gate certifies only pre-outcome contract/patient/split freezing. It does not certify absence of prior literature knowledge.",
+  "n_confirmation": 13,
+  "n_development": 20,
+  "n_patients": 33,
+  "patient_file": "patients.txt",
+  "patient_set_sha256": "38dbf649449a5634e006a4e59d7bfc4416df42821480af38c0236c4e3e6f2c2c",
+  "schema": "qualifyot-target-access-gate-v1",
+  "split_file": "split.csv",
+  "split_file_sha256": "a739acfe722cd479827a8b20f13c6c51ae5803b7cdd367d82750e75cdf7f85b7",
+  "target_access_allowed": true
+}

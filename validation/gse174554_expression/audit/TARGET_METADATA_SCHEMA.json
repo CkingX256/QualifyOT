@@ -1,0 +1,17 @@
+{
+  "path": "D:\\py_work\\关于模型的猜想\\DDGNN_GSE272993\\GSE174554_Tumor_normal_metadata.txt.gz",
+  "header_verbatim": "Sample#_Barcode Tumor_Normal_annotation",
+  "columns": [
+    "Sample#_Barcode",
+    "Tumor_Normal_annotation"
+  ],
+  "delimiter": "whitespace",
+  "compound_key": "Sample#_Barcode split once at first underscore",
+  "rows_valid": 254288,
+  "rows_malformed": 0,
+  "specimens": 100,
+  "unique_labels": [
+    "Normal",
+    "Tumor"
+  ]
+}

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use QualifyOT, please cite the accompanying manuscript."
-title: "QualifyOT"
+message: "If you use QualifyOT, please cite the accompanying manuscript and this software repository."
+title: "QualifyOT: patient-level evidence control for longitudinal single-cell prediction"
 type: software
 authors:
   - family-names: "Hu"

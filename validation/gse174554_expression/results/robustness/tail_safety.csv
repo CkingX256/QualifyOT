@@ -1,0 +1,9 @@
+candidate,seed,metric,estimate,bootstrap_lo,bootstrap_hi,bootstrap,role
+ExpressionElasticNet,20260903,mean_harm,0.0,0.0,0.0,5000,PRIMARY_TAIL_SAFETY
+ExpressionElasticNet,20260903,fraction_harmed,0.0,0.0,0.0,5000,PRIMARY_TAIL_SAFETY
+ExpressionElasticNet,20260903,worst_patient_harm,0.0,0.0,0.0,5000,PRIMARY_TAIL_SAFETY
+ExpressionElasticNet,20260903,cvar20_harm,0.0,0.0,0.0,5000,PRIMARY_TAIL_SAFETY
+CompositionEntropicOT,20260903,mean_harm,0.0,0.0,0.0,5000,PRIMARY_TAIL_SAFETY
+CompositionEntropicOT,20260903,fraction_harmed,0.0,0.0,0.0,5000,PRIMARY_TAIL_SAFETY
+CompositionEntropicOT,20260903,worst_patient_harm,0.0,0.0,0.0,5000,PRIMARY_TAIL_SAFETY
+CompositionEntropicOT,20260903,cvar20_harm,0.0,0.0,0.0,5000,PRIMARY_TAIL_SAFETY

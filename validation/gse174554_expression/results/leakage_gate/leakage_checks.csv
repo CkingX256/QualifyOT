@@ -1,0 +1,22 @@
+check,candidate,max_abs_difference,status,details
+physical_patient_partition_disjointness,ALL,0.0,PASS,development=16 confirmation=10 overlap=0
+source_cell_permutation_invariance,PSEUDOBULK,0.0,PASS,raw counts summed before CPM
+exact_full_source_cell_duplication_invariance,PSEUDOBULK,0.0,PASS,duplicating the complete cell set leaves CPM unchanged
+recurrence_expression_embargo,ALL,0.0,PASS,recurrence_expression_opened=False
+heldout_target_column_removal,ExpressionElasticNet,0.0,PASS,prediction with target columns removed
+heldout_target_mutation,ExpressionElasticNet,0.0,PASS,confirmation target columns swapped
+k2_simplex_legality,ExpressionElasticNet,0.0,PASS,minimum=0
+heldout_target_column_removal,RobustBlend,0.0,PASS,prediction with target columns removed
+heldout_target_mutation,RobustBlend,0.0,PASS,confirmation target columns swapped
+k2_simplex_legality,RobustBlend,0.0,PASS,minimum=0.080265415185590244
+heldout_target_column_removal,DirectDeltaRidge,0.0,PASS,prediction with target columns removed
+heldout_target_mutation,DirectDeltaRidge,0.0,PASS,confirmation target columns swapped
+k2_simplex_legality,DirectDeltaRidge,0.0,PASS,minimum=0.16053083037118049
+heldout_target_column_removal,PatientMultiScaleDelta,0.0,PASS,prediction with target columns removed
+heldout_target_mutation,PatientMultiScaleDelta,0.0,PASS,confirmation target columns swapped
+k2_simplex_legality,PatientMultiScaleDelta,0.0,PASS,minimum=0.058145444044154636
+heldout_target_column_removal,CompositionEntropicOT,0.0,PASS,prediction with target columns removed
+heldout_target_mutation,CompositionEntropicOT,0.0,PASS,confirmation target columns swapped
+k2_simplex_legality,CompositionEntropicOT,0.0,PASS,minimum=0.23711006443333682
+prespecified_candidate_order,ALL,0.0,PASS,ExpressionElasticNet|RobustBlend|DirectDeltaRidge|PatientMultiScaleDelta|CompositionEntropicOT
+all_five_candidates_executed_k2,ALL,0.0,PASS,successful=5

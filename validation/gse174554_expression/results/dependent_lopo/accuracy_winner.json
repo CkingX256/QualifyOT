@@ -1,0 +1,14 @@
+{
+  "candidate": "CompositionEntropicOT",
+  "candidate_mae": 0.2813749393231009,
+  "seed": 20260903,
+  "tie_tolerance": 1e-12,
+  "tie_order": [
+    "ExpressionElasticNet",
+    "RobustBlend",
+    "DirectDeltaRidge",
+    "PatientMultiScaleDelta",
+    "CompositionEntropicOT"
+  ],
+  "selection_role": "secondary_accuracy_winner_does_not_replace_prespecified_expression_candidate"
+}

@@ -1,0 +1,60 @@
+schema: qualifyot-external-postspec-validation-v1
+dataset: GSE315928 / gastric_tcr_analysis cell_counts_by_sample.csv
+provenance:
+  official_repository: wrightsamuel/gastric_tcr_analysis
+  raw_url: https://raw.githubusercontent.com/wrightsamuel/gastric_tcr_analysis/refs/heads/main/misc_data/cell_counts_by_sample.csv
+  local_content_sha256: 21bb917ff19139fac6130e3072b5c5f5f0bbc4696adbd7994afb0e3d4bf17dba
+  retrieval_note: Container DNS blocked direct byte download; all 95 raw text lines
+    were obtained from the public GitHub Raw representation and written verbatim.
+    Remote byte-level checksum was not independently available.
+  target_access_status: The B->F1 transition and MeanDelta reference were specified
+    in the conversation before this count table was opened, but the full YAML contract/ontology/candidate
+    family were not frozen before target counts became visible. Therefore this analysis
+    is external post-specification validation, NOT untouched immutable-contract confirmation.
+physical_patient_unit: patient_id parsed from Sample prefix E##
+primary_transition: B -> F1
+secondary_transitions:
+- F1 -> F2 among patients with both
+- B -> F2 among patients with both
+ontology:
+  states:
+  - T
+  - NonT_immune
+  - NonImmune
+  mapping:
+  - T = T cells / Total
+  - NonT_immune = (Immune - T cells) / Total
+  - NonImmune = (Total - Immune) / Total
+  justification: Disjoint exhaustive partition mechanically implied by the three published
+    count columns; no outcome-adaptive merging.
+loss: MAE on 3-state simplex
+movement_margin: 0.01
+primary_reference: MeanDelta
+reference_sensitivities:
+- Persistence
+- CohortMean
+candidate_family:
+- RobustBlend
+- DirectDeltaRidge_a10
+- PatientMultiScaleDelta
+- CompositionEntropicOT_e0.25
+inference:
+  efficient_lopo:
+    bootstrap: 2000
+    seeds:
+    - 20260903
+    - 20261003
+    - 20261103
+    - 20261203
+    status: primary descriptive/evidence portability analysis; LOPO dependence means
+      no exact finite-sample claim
+  honest_split_sensitivity: true
+  development_fraction: 0.6
+  split_salt: GSE315928_BF1_postspec_20260903_v1
+  honest_alpha: 0.05
+  multiplicity: candidate-level IUT p=max(pM,pU,pN), Holm across 4 candidates
+secondary_progression_analysis: Slow/Fast labels are not used for primary fitting,
+  reference selection, ontology, or qualification. They may be used only for post
+  hoc biological interpretation after primary analysis.
+exclusions: Primary requires both B and F1; no exclusions based on target composition
+  or results.

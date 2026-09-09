@@ -1,0 +1,42 @@
+datasets:
+  GSE236581:
+    enabled: true
+    role: flagship_external
+    tissue: Tumor
+    files:
+      metadata:
+        url: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE236nnn/GSE236581/suppl/GSE236581_CRC-ICB_metadata.txt.gz
+        fallback_url: https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE236581&file=GSE236581_CRC-ICB_metadata.txt.gz&format=file
+        filename: GSE236581_CRC-ICB_metadata.txt.gz
+    adapter: gse236581
+  GSE123813:
+    enabled: true
+    role: external_bcc
+    files:
+      metadata:
+        url: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE123nnn/GSE123813/suppl/GSE123813_bcc_tcell_metadata.txt.gz
+        fallback_url: https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE123813&file=GSE123813_bcc_tcell_metadata.txt.gz&format=file
+        filename: GSE123813_bcc_tcell_metadata.txt.gz
+    adapter: gse123813
+  GSE120575:
+    enabled: true
+    role: external_melanoma
+    files:
+      patient_metadata:
+        url: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE120nnn/GSE120575/suppl/GSE120575_patient_ID_single_cells.txt.gz
+        fallback_url: https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE120575&file=GSE120575_patient_ID_single_cells.txt.gz&format=file
+        filename: GSE120575_patient_ID_single_cells.txt.gz
+      cluster_info:
+        url: https://raw.githubusercontent.com/KlugerLab/DAseq-paper/master/data/melanoma_cluster_info
+        filename: melanoma_cluster_info.tsv
+    adapter: gse120575
+  GSE205506:
+    enabled: false
+    role: optional_heavy_crc
+    note: processed MTX bundle lacks a lightweight author cell-state table in GEO; disabled until a pre-specified annotation contract is supplied
+    files:
+      raw_bundle:
+        url: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE205nnn/GSE205506/suppl/GSE205506_RAW.tar
+        fallback_url: https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE205506&file=GSE205506_RAW.tar&format=file
+        filename: GSE205506_RAW.tar
+    adapter: gse205506

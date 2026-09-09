@@ -1,0 +1,10 @@
+dataset,n_patients,accuracy_winner,winner_risk,winner_state,winner_core_qualified,n_core_qualified,core_qualified_candidates,n_holm_diagnostic_qualified,holm_diagnostic_qualified_candidates,accuracy_winner_holm_diagnostic_qualified
+GSE120575_pairs,8,CompositionEntropicOT_e0.25,0.1051456317702118,Equivocal,False,0,,0,,False
+GSE123813_pairs,9,CompositionEntropicOT_e0.25,0.0419055927173596,Equivocal,False,0,,0,,False
+GSE175522_D0_D7_Bcell_pairs,6,CompositionEntropicOT_e0.25,0.0211220245325849,Equivocal,False,0,,0,,False
+GSE179994_pairs,8,CompositionEntropicOT_e0.25,0.0660408927834023,Equivocal,False,0,,0,,False
+GSE229772_HCC_primary_pairs,9,PatientMultiScaleDelta,0.1079818495777216,Equivocal,False,0,,0,,False
+GSE235063_AML_primary_pairs,21,CompositionEntropicOT_e0.25,0.1227835025333018,Qualified,True,1,CompositionEntropicOT_e0.25,0,,False
+GSE236581_pairs,21,CompositionEntropicOT_e0.25,0.1022904525422194,Qualified,True,1,CompositionEntropicOT_e0.25,1,CompositionEntropicOT_e0.25,True
+GSE272993_9state_pairs,35,PatientMultiScaleDelta,0.0390298995099996,Promising,False,0,,0,,False
+SoundLife_D0_D7_Bcell_5state_pairs,67,PatientMultiScaleDelta,0.020325544593301735,Equivocal,False,0,,0,,False

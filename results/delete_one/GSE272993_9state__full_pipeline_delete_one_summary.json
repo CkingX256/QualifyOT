@@ -1,0 +1,14 @@
+{
+  "adverse": 0,
+  "csv_sha256": "b872d73821fd5ddaec13ae22f64809a5e8cb258f806799708f94f80cbb4eca0a",
+  "dataset": "GSE272993_9state",
+  "equivocal": 2,
+  "max_movement_lcb": 0.0664719594579239,
+  "max_utility_lcb": 0.0008649153530381,
+  "min_movement_lcb": 0.0610289947454128,
+  "min_utility_lcb": -0.0002087288835885,
+  "n_runs": 35,
+  "promising": 33,
+  "qualified": 0,
+  "retention_zero_all": true
+}

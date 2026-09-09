@@ -1,0 +1,65 @@
+captured_utc=2026-09-07T01:16:58+00:00
+os=Windows-11-10.0.26200-SP0
+machine=AMD64
+processor=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel
+python=path omitted
+python_version=Python 3.12.13
+
+[pip-freeze]
+anndata==0.11.4
+array-api-compat==1.15.0
+celltypist==1.7.1
+certifi==2026.7.22
+charset-normalizer==3.4.9
+click==8.4.2
+colorama==0.4.6
+contourpy==1.3.3
+cycler==0.12.1
+et_xmlfile==2.0.0
+fonttools==4.63.0
+h5py==3.12.1
+idna==3.18
+igraph==1.0.0
+iniconfig==2.3.0
+joblib==1.4.2
+kiwisolver==1.5.0
+legacy-api-wrap==1.5
+leidenalg==0.12.0
+llvmlite==0.48.0
+matplotlib==3.10.0
+natsort==8.4.0
+networkx==3.6.1
+numba==0.66.0
+numpy==2.1.3
+openpyxl==3.1.5
+packaging=environment-managed build
+pandas==2.2.3
+patsy==1.0.2
+pillow==12.3.0
+pip=environment-managed build
+pluggy==1.6.0
+psutil==5.9.8
+pynndescent==0.6.0
+pyparsing==3.3.2
+pytest==8.3.4
+python-dateutil==2.9.0.post0
+pytz==2026.3.post1
+PyYAML==6.0.2
+requests==2.32.3
+scanpy==1.11.4
+scikit-learn==1.6.1
+scipy==1.15.3
+seaborn==0.13.2
+session-info2==0.4.2
+setuptools==84.0.0
+six==1.17.0
+statsmodels==0.14.6
+texttable==1.7.0
+threadpoolctl==3.6.0
+tqdm==4.70.0
+typing_extensions==4.16.0
+tzdata==2026.3
+umap-learn==0.5.12
+urllib3==2.7.0
+wheel==0.47.0
+xgboost==3.0.2

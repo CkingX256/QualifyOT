@@ -1,0 +1,57 @@
+schema_version: 1
+contract_id: QualifyOT-GSE174554-primary-first-recurrence-expression-v1
+status: PRE_TARGET_FROZEN
+cohort: GSE174554
+analysis_unit: physical_patient
+patient_identity_source: numeric_Pair_number_only
+source_timepoint: primary
+target_timepoint: first_recurrence
+multiple_recurrence_rule: earliest_numeric_elapsed_days_then_workbook_order
+required_modality: snRNA-seq
+predictor_input: primary_source_expression_only
+target_definition: author_labeled_Tumor_vs_NonTumor_cell_composition
+states:
+  - Tumor
+  - NonTumor
+split:
+  algorithm: lexicographic_full_sha256_then_first_floor_0.60N
+  salt: QualifyOT|GSE174554|primary-first-recurrence|expression-v1
+  development_fraction: 0.60
+  retries: forbidden
+primary_candidate: ExpressionElasticNet
+primary_reference: development_fitted_patient_balanced_MeanDelta
+primary_loss: patient_equal_MAE
+movement_distance: Hellinger
+primary_seed: 20260903
+stability_seeds:
+  - 20261003
+  - 20261103
+  - 20261203
+n_jobs: 4
+expression_candidate:
+  max_genes: 2000
+  alpha: 0.01
+  l1_ratio: 0.5
+  fit_intercept: true
+  max_iter: 100000
+  tol: 1.0e-7
+  selection: cyclic
+retention:
+  weight_grid_start: 0.0
+  weight_grid_stop: 1.0
+  weight_grid_step: 0.01
+  bootstrap_primary: 5000
+  rule: simultaneous_max_t_harm_UCB_one_SE_smallest_weight
+confirmation:
+  inference: localized_heterogeneous_Hoeffding
+  qualification: LCB_GM_gt_0_AND_LCB_U_gt_0_AND_LCB_N_gt_0
+  candidate_p_value: max_pM_pU_pN
+  multiplicity: Holm_across_successfully_executed_prespecified_candidates
+embargo:
+  recurrence_expression: forbidden_for_predictor_construction
+  confirmation_targets: single_exposure_after_all_functions_frozen
+prohibited_changes:
+  - alternate_split_salt
+  - replacement_seed
+  - target_driven_annotation
+  - post_result_hyperparameter_change
